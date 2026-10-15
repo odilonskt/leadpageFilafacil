@@ -3,7 +3,7 @@ import { REPO_URL } from '@/lib/content'
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-muted/40 px-4 py-12 sm:px-6">
+    <footer className="border-t border-border px-4 pb-28 pt-12 sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 text-sm text-muted-foreground sm:flex-row sm:items-start sm:justify-between">
         <div className="flex items-center gap-2 font-semibold text-foreground">
           <img src={logo} alt="" aria-hidden="true" className="size-6 rounded-md" />

@@ -26,7 +26,7 @@ function Steps({ steps }: { steps: typeof HOW_IT_WORKS_CLIENT | typeof HOW_IT_WO
 
 export function ComoFunciona() {
   return (
-    <section id="como-funciona" aria-labelledby="como-funciona-heading" className="bg-muted/40 px-4 py-20 sm:px-6">
+    <section id="como-funciona" aria-labelledby="como-funciona-heading" className="px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <h2 id="como-funciona-heading" className="text-3xl font-extrabold tracking-tight sm:text-4xl">

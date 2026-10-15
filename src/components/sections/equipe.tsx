@@ -4,7 +4,7 @@ import { ADVISOR, TEAM } from '@/lib/content'
 
 export function Equipe() {
   return (
-    <section id="equipe" aria-labelledby="equipe-heading" className="bg-muted/40 px-4 py-20 sm:px-6">
+    <section id="equipe" aria-labelledby="equipe-heading" className="px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <h2 id="equipe-heading" className="text-3xl font-extrabold tracking-tight sm:text-4xl">

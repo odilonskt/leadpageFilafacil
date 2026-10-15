@@ -15,7 +15,7 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-32 right-[-10%] size-[28rem] rounded-full opacity-20 blur-3xl brand-gradient"
+        className="pointer-events-none absolute -top-40 right-[-15%] size-[26rem] rounded-full opacity-10 blur-[120px] brand-gradient"
       />
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
@@ -44,20 +44,31 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <div className="relative mx-auto flex max-w-md items-center justify-center" aria-hidden="true">
+        <div className="relative mx-auto flex max-w-md items-center justify-center py-10" aria-hidden="true">
+          <div className="absolute bottom-2 h-10 w-56 rounded-full bg-foreground/10 blur-2xl" />
+
           <motion.img
             src={home}
             alt=""
-            className="w-56 rounded-[2rem] border border-border shadow-2xl sm:w-64"
-            animate={prefersReducedMotion ? undefined : { y: [0, -14, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-56 rounded-[2rem] border border-border/60 shadow-xl sm:w-64"
+            animate={
+              prefersReducedMotion
+                ? undefined
+                : { y: [0, -16, 0, 8, 0], rotate: [0, -1.5, 0, 1, 0] }
+            }
+            transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut', times: [0, 0.3, 0.5, 0.8, 1] }}
           />
           <motion.img
             src={homeNotificacao}
             alt=""
-            className="absolute -right-4 -top-6 w-40 rotate-6 rounded-[1.5rem] border border-border shadow-2xl sm:w-48"
-            animate={prefersReducedMotion ? undefined : { y: [0, 12, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+            className="absolute -right-4 -top-6 w-40 rounded-[1.5rem] border border-border/60 shadow-xl sm:w-48"
+            initial={{ rotate: 6 }}
+            animate={
+              prefersReducedMotion
+                ? undefined
+                : { y: [0, 14, 0, -6, 0], rotate: [6, 3, 7, 5, 6] }
+            }
+            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 0.6, times: [0, 0.3, 0.55, 0.8, 1] }}
           />
         </div>
       </div>

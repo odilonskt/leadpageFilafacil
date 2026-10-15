@@ -1,3 +1,4 @@
+import { Dock } from '@/components/dock'
 import { Navbar } from '@/components/navbar'
 import { ComoFunciona } from '@/components/sections/como-funciona'
 import { ComoRodar } from '@/components/sections/como-rodar'
@@ -32,6 +33,7 @@ function App() {
         <ComoRodar />
       </main>
       <Footer />
+      <Dock />
     </ThemeProvider>
   )
 }

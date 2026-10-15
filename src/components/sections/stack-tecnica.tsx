@@ -7,7 +7,7 @@ export function StackTecnica() {
     <section
       id="tecnologia"
       aria-labelledby="tecnologia-heading"
-      className="bg-muted/40 px-4 py-20 sm:px-6"
+      className="px-4 py-20 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
         <Reveal>
