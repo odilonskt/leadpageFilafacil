@@ -1,5 +1,5 @@
-export const REPO_URL = 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-2-e3-proj-mov-t5-fila-facil'
-// APK publicado como asset da última Release do repositório do app
+export const REPO_URL = 'https://github.com/odilonskt/leadpageFilafacil'
+// APK publicado como asset da última Release deste repositório (público)
 export const APK_URL = `${REPO_URL}/releases/latest/download/fila-facil.apk`
 
 export const FEATURES = [
