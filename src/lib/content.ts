@@ -1,5 +1,6 @@
-// TODO: trocar pelo link real do repositório quando ele for criado/publicado.
-export const REPO_URL = '#'
+export const REPO_URL = 'https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-2-e3-proj-mov-t5-fila-facil'
+// APK publicado como asset da última Release do repositório do app
+export const APK_URL = `${REPO_URL}/releases/latest/download/fila-facil.apk`
 
 export const FEATURES = [
   {

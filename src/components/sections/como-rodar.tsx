@@ -1,7 +1,7 @@
 import { Reveal } from '@/components/motion/reveal'
 import { buttonVariants } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { REPO_URL } from '@/lib/content'
+import { APK_URL, REPO_URL } from '@/lib/content'
 
 const STEPS = [
   { command: 'npm run setup', description: 'primeira vez: instala tudo' },
@@ -50,10 +50,13 @@ export function ComoRodar() {
 
         <Reveal delay={0.15}>
           <div className="mt-8 flex flex-wrap gap-4">
+            <a href={APK_URL} download className={buttonVariants({ size: 'lg' })}>
+              Baixar APK (Android)
+            </a>
             <a
               href={REPO_URL}
               {...(REPO_URL.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}
-              className={buttonVariants({ size: 'lg' })}
+              className={buttonVariants({ size: 'lg', variant: 'outline' })}
             >
               Ver repositório no GitHub
             </a>
